@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>木子的博客</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.6/marked.js"></script>
+  <link rel="stylesheet" href="./typo.css">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <style>
+    body{padding:16px;}
+    img{max-width:100%;}
+  </style>
+</head>
+<body>
+<div id="content">
+  # 我的第二篇博客
+
+** 木子**
+
+世界上本没有路，走的人多了，也便成了路。—鲁迅
+
+我今天学会markdown了。
+
+<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1491481494675&di=edf7cedf42013de9d8712bbe05b3a515&imgtype=0&src=http%3A%2F%2Fimg.pconline.com.cn%2Fimages%2Fupload%2Fupc%2Ftx%2Fphotoblog%2F1310%2F08%2Fc13%2F27088617_27088617_1381201227937_mthumb.jpg" alt="" >
+</div>
+<!--  ` 数字1的左边 
+marked
+typo.css
+-->
+<!--   <script>
+  var markdown=`
+  # 我的第二篇博客
+  
+  ** 木子**
+  
+  世界上本没有路，走的人多了，也便成了路。—鲁迅
+  
+  我今天学会markdown了。
+  
+  <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1491481494675&di=edf7cedf42013de9d8712bbe05b3a515&imgtype=0&src=http%3A%2F%2Fimg.pconline.com.cn%2Fimages%2Fupload%2Fupc%2Ftx%2Fphotoblog%2F1310%2F08%2Fc13%2F27088617_27088617_1381201227937_mthumb.jpg" alt="" >
+   `
+  
+   var html=marked(markdown)
+   console.log(html)
+    
+    document.getElementById('content').innerHTML = html;
+   
+  </script> -->
+  <script>
+    var content=document.getElementById("content");
+    var markdown=content.innerHTML;
+    <!-- console.log(markdown) -->
+      var html=marked(markdown);
+    content.innerHTML=html;
+    console.log(html);
+  </script>
+    
+</body>
+</html>
